@@ -19,6 +19,6 @@
     "url": "https://github.com/tomzx/gkm/issues"
   },
   "dependencies": {
-    "eventemitter2": "~0.4.13"
+    "eventemitter3": "^4.0.0"
   }
 }

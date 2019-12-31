@@ -2,11 +2,11 @@
 
 // TODO: Verify if we're getting loaded from multiples location and prevent creating new child processes?
 
-var EventEmitter2 = require('eventemitter2').EventEmitter2;
+var EventEmitter3 = require('eventemitter3');
 var path = require('path');
 var spawn = require('child_process').spawn;
 
-var events = new EventEmitter2({wildcard: true});
+var events = new EventEmitter3();
 var gkm = spawn('java', ['-jar', path.join(__dirname, 'lib/gkm.jar')]);
 
 gkm.stdout.on('data', function(data) {
